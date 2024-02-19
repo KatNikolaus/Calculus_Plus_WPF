@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculus_Plus_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="150" Width="270">
-    <Grid Margin="0,0,25,29">
+        Title="Calculus Plus" Height="150" Width="270">
+    <Grid Margin="0,0,0,4">
         <Button Content="Calculate" HorizontalAlignment="Left" Margin="20,64,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Margin="20,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="20,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" TextChanged="TextBox_TextChanged"/>
         <Button Content="Reset" HorizontalAlignment="Left" Margin="105,64,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
         <Button Content="Quit" HorizontalAlignment="Left" Margin="180,64,0,0" VerticalAlignment="Top"/>
+        <Label Content="Posible math. Operations: + - * / % ^ ( ) [ ] { }" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Top"/>
+        <Button Content="Primfinder" HorizontalAlignment="Left" Margin="20,99,0,0" VerticalAlignment="Top"/>
+        <Button Content="Sqrt" HorizontalAlignment="Left" Margin="105,99,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
 
     </Grid>
 </Window>
