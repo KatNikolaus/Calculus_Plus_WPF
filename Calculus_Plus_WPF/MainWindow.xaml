@@ -23,32 +23,30 @@
             <RowDefinition Height ="*"/>
         </Grid.RowDefinitions>
 
-        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Name="TextBox1" HorizontalAlignment="Left" Margin="5,5,5,5" TextWrapping="Wrap" VerticalAlignment="Center" Width="190" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Name="TextBox1" HorizontalAlignment="Center" Margin="5,5,5,5" TextWrapping="Wrap" VerticalAlignment="Center" MinWidth="190" TextChanged="TextBox_TextChanged_1"/>
 
-        <Button Grid.Row="1" Grid.Column="0" Name="b1" Content="1" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click" />
-        <Button Grid.Row="1" Grid.Column="1" Name="b2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Grid.Row="1" Grid.Column="2" Name="b3" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Grid.Row="1" Grid.Column="3" Name="bPrim" Content="Primfinder" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Grid.Row="1" Grid.Column="4" Name="bSqrt" Content="Sqrt" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_2"/>
+        <Button Padding="5,5,5,5" Margin="5,5,5,5" Grid.Row="1" Grid.Column="0" Name="b1" Content="1" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click" />
+        <Button Padding="5,5,5,5" Margin="5,5,5,5" Grid.Row="1" Grid.Column="1" Name="b2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Margin="5,5,5,5" Grid.Row="1" Grid.Column="2" Name="b3" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Margin="5,5,5,5" Grid.Row="1" Grid.Column="3" Name="bPrim" Content="Primfinder" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Margin="5,5,5,5" Grid.Row="1" Grid.Column="4" Name="bSqrt" Content="Sqrt" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_2"/>
 
-        <Button Grid.Row="2" Grid.Column="0" Name="b4" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Grid.Row="2" Grid.Column="1" Name="b5" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Grid.Row="2" Grid.Column="2" Name="b6" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Grid.Row="2" Grid.Column="3" Name="bPlus" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Grid.Row="2" Grid.Column="4" Name="bMinus" Content="-" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click_5"/>
+        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="0" Name="b4" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="1" Name="b5" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="2" Name="b6" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="3" Name="bPlus" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="4" Name="bMinus" Content="-" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click_5"/>
 
-        <Button Grid.Row="3" Grid.Column="0" Name="b7" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Grid.Row="3" Grid.Column="1" Name="b8" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Grid.Row="3" Grid.Column="2" Name="b9" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Grid.Row="3" Grid.Column="3" Name="bMul" Content="*" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Grid.Row="3" Grid.Column="4" Name="bDiv" Content="/" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_4"/>
+        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="0" Name="b7" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="1" Name="b8" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="2" Name="b9" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="3" Name="bMul" Content="*" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="4" Name="bDiv" Content="/" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_4"/>
 
-        <Button Grid.Row="4" Grid.Column="0" Name="bSign" Content="+/-" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click_7"/>
-        <Button Grid.Row="4" Grid.Column="1" Name="b0" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_3"/>
-        <Button Grid.Row="4" Grid.Column="2" Name="bEqual" Content="=" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Grid.Row="4" Grid.Column="3" Name="bMod" Content="%" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
-        <Button Grid.Row="4" Grid.Column="4" Name="bPot" Content="^" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
-
-      
+        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="0" Name="bSign" Content="+/-" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click_7"/>
+        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="1" Name="b0" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_3"/>
+        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="2" Name="bEqual" Content="=" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="3" Name="bMod" Content="%" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="4" Name="bPot" Content="^" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
     </Grid>
 </Window>
