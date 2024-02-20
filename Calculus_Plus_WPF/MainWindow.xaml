@@ -1,39 +1,49 @@
-﻿<Window x:Class="Calculus_Plus_WPF.MainWindow"
+﻿<Window x:Name="Window1" x:Class="Calculus_Plus_WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculus_Plus_WPF"
         mc:Ignorable="d"
-        Title="Calculus Plus" Height="145" Width="160">
-    <Grid Margin="0,0,0,4">
-        <Button Content="1" HorizontalAlignment="Left" Margin="20,29,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="20,79,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="*" HorizontalAlignment="Left" Margin="111,54,0,0" VerticalAlignment="Top"/>
-        <Label Content="" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Top" Width="118"/>
-        <Button Content="Primfinder" HorizontalAlignment="Left" Margin="79,29,0,0" VerticalAlignment="Top"/>
-        <Button Content="Sqrt" HorizontalAlignment="Left" Margin="79,54,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
-        <Button Content="=" HorizontalAlignment="Left" Margin="53,104,0,0" VerticalAlignment="Top"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="125,79,0,0" VerticalAlignment="Top" Width="12"/>
-        <Button Content="0" HorizontalAlignment="Left" Height="20" Margin="37,104,0,0" VerticalAlignment="Top" Width="10" Click="Button_Click_3"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="55,54,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="37,29,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="55,29,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="20,54,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="37,54,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="37,79,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="37,79,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="55,79,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        <Button Content="*" HorizontalAlignment="Left" Margin="111,54,0,0" VerticalAlignment="Top"/>
-        <Button Content="*" HorizontalAlignment="Left" Margin="111,54,0,0" VerticalAlignment="Top"/>
-        <Button Content="/" HorizontalAlignment="Left" Margin="129,54,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="111,79,0,0" VerticalAlignment="Top" Click="Button_Click_5"/>
-        <Button Content="%" HorizontalAlignment="Left" Margin="79,79,0,0" VerticalAlignment="Top"/>
-        <Button Content="^" HorizontalAlignment="Left" Margin="94,79,0,0" VerticalAlignment="Top"/>
-        <Button Content="(" HorizontalAlignment="Left" Margin="79,104,0,0" VerticalAlignment="Top" Click="Button_Click_6"/>
-        <Button Content=")" HorizontalAlignment="Left" Margin="92,104,0,0" VerticalAlignment="Top"/>
-        <Button Content="," HorizontalAlignment="Left" Margin="20,104,0,0" VerticalAlignment="Top"/>
-        <Button Content="+/-" HorizontalAlignment="Left" Margin="116,105,0,0" VerticalAlignment="Top" Click="Button_Click_7"/>
-
+        Title="Calculus Plus" MinHeight="100" MinWidth="200" MaxHeight="200" MaxWidth="400">
+    <Grid Margin="0,0,0,4" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"></RowDefinition>
+            <RowDefinition Height ="*"></RowDefinition>
+            <RowDefinition Height ="*"></RowDefinition>
+            <RowDefinition Height ="*"></RowDefinition>
+            <RowDefinition Height ="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1" Grid.Column="0" Name="b1" Content="1" HorizontalAlignment="Left" Margin="20,29,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Grid.Row="3" Grid.Column="2" Name="b7" Content="7" HorizontalAlignment="Left" Margin="20,79,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Name="bMul" Content="*" HorizontalAlignment="Left" Margin="111,54,0,0" VerticalAlignment="Top"/>
+        <Button Name="bPrim" Content="Primfinder" HorizontalAlignment="Left" Margin="79,29,0,0" VerticalAlignment="Top" Width="61"/>
+        <Button Name="bSqrt" Content="Sqrt" HorizontalAlignment="Left" Margin="79,54,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <Button Grid.Row="4" Grid.Column="0" Name="bEqual" Content="=" HorizontalAlignment="Left" Margin="53,104,0,0" VerticalAlignment="Top"/>
+        <Button Name="bPlus" Content="+" HorizontalAlignment="Left" Margin="125,79,0,0" VerticalAlignment="Top" Width="12"/>
+        <Button Grid.Row="4" Grid.Column="1" Name="b0" Content="0" HorizontalAlignment="Left" Height="20" Margin="37,104,0,0" VerticalAlignment="Top" Width="10" Click="Button_Click_3"/>
+        <Button Grid.Row="2" Grid.Column="2" Name="b6" Content="6" HorizontalAlignment="Left" Margin="55,54,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Grid.Row="1" Grid.Column="1" Name="b" Content="2" HorizontalAlignment="Left" Margin="37,29,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Grid.Row="1" Grid.Column="2" Name="b3" Content="3" HorizontalAlignment="Left" Margin="55,29,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Grid.Row="2" Grid.Column="0" Name="b4" Content="4" HorizontalAlignment="Left" Margin="20,54,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Grid.Row="2" Grid.Column="1" Name="b5" Content="5" HorizontalAlignment="Left" Margin="37,54,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Grid.Row="3" Grid.Column="1" Name="b8" Content="8" HorizontalAlignment="Left" Margin="37,79,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Grid.Row="3" Grid.Column="2" Name="b9" Content="9" HorizontalAlignment="Left" Margin="55,79,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Name="bDiv" Content="/" HorizontalAlignment="Left" Margin="129,54,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
+        <Button Name="bMinus" Content="-" HorizontalAlignment="Left" Margin="111,79,0,0" VerticalAlignment="Top" Click="Button_Click_5"/>
+        <Button Name="bMod" Content="%" HorizontalAlignment="Left" Margin="79,79,0,0" VerticalAlignment="Top"/>
+        <Button Name="bPot" Content="^" HorizontalAlignment="Left" Margin="94,79,0,0" VerticalAlignment="Top"/>
+        <Button Name="bLBrRound" Content="(" HorizontalAlignment="Left" Margin="79,104,0,0" VerticalAlignment="Top" Click="Button_Click_6"/>
+        <Button Name="bRBrRound" Content=")" HorizontalAlignment="Left" Margin="92,104,0,0" VerticalAlignment="Top"/>
+        <Button Name="bSign" Content="+/-" HorizontalAlignment="Left" Margin="116,105,0,0" VerticalAlignment="Top" Click="Button_Click_7"/>
+        
+        <TextBox Grid.Row="0" Grid.ColumnSpan="5" Name="TextBox1" HorizontalAlignment="Center" Margin="5,5,5,5" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" TextChanged="TextBox_TextChanged_1"/>
     </Grid>
 </Window>

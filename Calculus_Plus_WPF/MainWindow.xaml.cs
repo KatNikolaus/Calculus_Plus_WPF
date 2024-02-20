@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Calculus_Plus_WPF
 {
     /// <summary>
@@ -18,14 +19,15 @@ namespace Calculus_Plus_WPF
     {
         public MainWindow()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
-
+    
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
+      
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
@@ -41,9 +43,10 @@ namespace Calculus_Plus_WPF
 
         }
 
+        // Button '0'
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            //TextBox1.Text += '0';
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
@@ -62,6 +65,11 @@ namespace Calculus_Plus_WPF
         }
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
         }
