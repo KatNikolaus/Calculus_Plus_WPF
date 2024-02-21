@@ -5,10 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculus_Plus_WPF"
         mc:Ignorable="d"
-        Title="Calculus Plus" MinHeight="100" MinWidth="200" MaxHeight="200" MaxWidth="400">
-    <Grid Margin="0,0,0,4" >
+        Title="Calculus Plus" MinHeight="200" MinWidth="400" MaxHeight="400" MaxWidth="800">
+    <Grid Margin="5,5,5,5">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -23,30 +22,29 @@
             <RowDefinition Height ="*"/>
         </Grid.RowDefinitions>
 
-        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Name="TextBox1" HorizontalAlignment="Center" Margin="5,5,5,5" TextWrapping="Wrap" VerticalAlignment="Center" MinWidth="190" TextChanged="TextBox_TextChanged_1"/>
+        <Button Padding="5,5,5,5" Grid.Row="1" x:Name="b1" Content="1" Click="Button_Click_1" />
+        <Button Padding="5,5,5,5" Grid.Row="1" Grid.Column="1" x:Name="b2" Content="2"  Click="Button_Click_2"/>
+        <Button Padding="5,5,5,5" Grid.Row="1" Grid.Column="2" x:Name="b3" Content="3"  Click="Button_Click_3"/>
+        <Button Padding="5,5,5,5" Grid.Row="1" Grid.Column="3" x:Name="bPrim" Content="Primfinder" Click="Button_Click_Prim"/>
+        <Button Padding="5,5,5,5" Grid.Row="1" Grid.Column="4" x:Name="bSqrt" Content="Sqrt" Click="Button_Click_Sqrt"/>
 
-        <Button Padding="5,5,5,5" Margin="5,5,5,5" Grid.Row="1" Grid.Column="0" Name="b1" Content="1" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click" />
-        <Button Padding="5,5,5,5" Margin="5,5,5,5" Grid.Row="1" Grid.Column="1" Name="b2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Margin="5,5,5,5" Grid.Row="1" Grid.Column="2" Name="b3" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Margin="5,5,5,5" Grid.Row="1" Grid.Column="3" Name="bPrim" Content="Primfinder" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Margin="5,5,5,5" Grid.Row="1" Grid.Column="4" Name="bSqrt" Content="Sqrt" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_2"/>
+        <Button Padding="5,5,5,5" Grid.Row="2" x:Name="b4" Content="4" Click="Button_Click_4"/>
+        <Button Padding="5,5,5,5" Grid.Row="2" Grid.Column="1" x:Name="b5" Content="5" Click="Button_Click_5"/>
+        <Button Padding="5,5,5,5" Grid.Row="2" Grid.Column="2" x:Name="b6" Content="6" Click="Button_Click_6"/>
+        <Button Padding="5,5,5,5" Grid.Row="2" Grid.Column="3" x:Name="bPlus" Content="+" Click="Button_Click_Plus"/>
+        <Button Padding="5,5,5,5" Grid.Row="2" Grid.Column="4" x:Name="bMinus" Content="-" Click="Button_Click_Minus"/>
 
-        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="0" Name="b4" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="1" Name="b5" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="2" Name="b6" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="3" Name="bPlus" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Margin="5,5,5,5" Grid.Row="2" Grid.Column="4" Name="bMinus" Content="-" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click_5"/>
+        <Button Padding="5,5,5,5" Grid.Row="3" x:Name="b7" Content="7" Click="Button_Click_7"/>
+        <Button Padding="5,5,5,5" Grid.Row="3" Grid.Column="1" x:Name="b8" Content="8" Click="Button_Click_8"/>
+        <Button Padding="5,5,5,5" Grid.Row="3" Grid.Column="2" x:Name="b9" Content="9" Click="Button_Click_9"/>
+        <Button Padding="5,5,5,5" Grid.Row="3" Grid.Column="3" x:Name="bMul" Content="*" Click="Button_Click_Mul"/>
+        <Button Padding="5,5,5,5" Grid.Row="3" Grid.Column="4" x:Name="bDiv" Content="/" Click="Button_Click_Div"/>
 
-        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="0" Name="b7" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="1" Name="b8" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="2" Name="b9" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="3" Name="bMul" Content="*" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Margin="5,5,5,5" Grid.Row="3" Grid.Column="4" Name="bDiv" Content="/" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_4"/>
-
-        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="0" Name="bSign" Content="+/-" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click_7"/>
-        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="1" Name="b0" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_3"/>
-        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="2" Name="bEqual" Content="=" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="3" Name="bMod" Content="%" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
-        <Button Margin="5,5,5,5" Grid.Row="4" Grid.Column="4" Name="bPot" Content="^" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <Button Padding="5,5,5,5" Grid.Row="4" x:Name="bSign" Content="+/-" Click="Button_Click_Sign"/>
+        <Button Padding="5,5,5,5" Grid.Row="4" Grid.Column="1" x:Name="b0" Content="0" Click="Button_Click"/>
+        <Button Padding="5,5,5,5" Grid.Row="4" Grid.Column="2" x:Name="bEqual" Content="=" Click="Button_Click_Equal"/>
+        <Button Padding="5,5,5,5" Grid.Row="4" Grid.Column="3" x:Name="bMod" Content="%" Click="Button_Click_Mod"/>
+        <Button Padding="5,5,5,5" Grid.Row="4" Grid.Column="4" x:Name="bPot" Content="^" Click="Button_Click_Pot"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" x:Name="Screen" Text="0"/>
     </Grid>
 </Window>
