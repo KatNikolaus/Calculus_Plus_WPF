@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Calculus_Plus_WPF"
         mc:Ignorable="d"
         Title="Calculus Plus" MinHeight="200" MinWidth="400" MaxHeight="400" MaxWidth="800">
+    
     <Grid Margin="5,5,5,5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -45,6 +46,6 @@
         <Button Padding="5,5,5,5" Grid.Row="4" Grid.Column="2" x:Name="bEqual" Content="=" Click="Button_Click_Equal"/>
         <Button Padding="5,5,5,5" Grid.Row="4" Grid.Column="3" x:Name="bMod" Content="%" Click="Button_Click_Mod"/>
         <Button Padding="5,5,5,5" Grid.Row="4" Grid.Column="4" x:Name="bPot" Content="^" Click="Button_Click_Pot"/>
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" x:Name="Screen" Text="0"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" x:Name="Screen" Text="0" FontSize="30"/>
     </Grid>
 </Window>
